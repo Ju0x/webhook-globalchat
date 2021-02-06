@@ -1,0 +1,12 @@
+{
+  "token": "PASTE YOUR TOKEN IN HERE",
+  "case_insensitive": true,
+  "prefix": "g!",
+  "antispam_cooldown": 3,
+  "automod_ignored_ids": [
+     1234567891234567
+  ],
+  "link_whitelist": [
+    "tenor.com"
+  ]
+}
