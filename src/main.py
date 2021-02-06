@@ -97,6 +97,18 @@ class Main(commands.Bot):
                     if invite in payload:
                         violation = "Invite-Link"
 
+                # Anti-ping
+
+                if "@everyone" in message.content or "@here" in message.content:
+                    violation = "everyone/here ping"
+
+                mention_count = 0
+                for i in message.mentions:
+                    mention_count = mention_count + 1
+
+                if mention_count > 3:
+                    violation = "massping"
+
                 # Anti-link
 
                 link = True
